@@ -40,8 +40,6 @@ jobs:
   runonother:
       runs-on: ubuntu-latest
       steps:
-      - uses: actions/checkout@v2
-      - name: run from other
-        uses: eddyv73/flow-showtime/.github/workflows/part-flow.yml@main
+      - uses: eddyv73/flow-showtime/.github/workflows/part-flow.yml@main
         with:
           label: ${{env.label}}
