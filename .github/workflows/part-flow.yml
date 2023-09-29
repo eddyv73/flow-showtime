@@ -23,3 +23,4 @@ jobs:
         run: |
           echo work flow flow
           echo showtime showtime
+          echo env ${{env.label}}
