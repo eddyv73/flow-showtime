@@ -33,3 +33,5 @@ jobs:
 
   part-flow:
     uses: eddyv73/flow-showtime/.github/workflows/part-flow.yml@main
+    secrets:
+      label: ${{env.label}}
