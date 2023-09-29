@@ -36,7 +36,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: run from other
-        uses: eddyv73/flow-showtime/tree/main/.github/workflows/part-flow.yml
+        uses: eddyv73/flow-showtime/tree/main/.github/workflows/part-flow.yml@main
         with:
           label: ${{env.label}}
       
