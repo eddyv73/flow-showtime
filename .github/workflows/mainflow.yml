@@ -37,3 +37,6 @@ jobs:
           echo test, and deploy your project.
       - name: run from other
         uses: eddyv73/flow-showtime/tree/main/.github/workflows/part-flow.yml
+        with:
+          label: ${{env.label}}
+      

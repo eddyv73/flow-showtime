@@ -9,7 +9,14 @@ on:
   pull_request:
     branches: [ "main" ]
   workflow_dispatch:
-
+  workflow_call:
+    inputs:
+      config-path:
+        required: true
+        type: string
+    secrets:
+      label:
+        required: true
 jobs:
   build:
     runs-on: ubuntu-latest
