@@ -1,0 +1,13 @@
+name: "Mi Acción con Secretos"
+description: "Ejemplo de uso de secretos"
+inputs:
+  mi_secreto:
+    description: "Secreto pasado desde el workflow"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Mostrar el secreto (enmascarado)
+      run: echo "El secreto es ${{ inputs.mi_secreto }}"
+      shell: bash
