@@ -30,7 +30,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
-      - uses: actions/test/mainb.yml@main
+      - uses: actions/main.yml@main
         with:
           mi_secreto: ${{ secrets.MY_SECRET }}
 
