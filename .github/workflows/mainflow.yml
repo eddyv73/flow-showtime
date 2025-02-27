@@ -30,6 +30,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
+      - uses: eddyv73/flow-showtime/.github/actions/main.yml@main
+        with:
+          mi_secreto: ${{ secrets.MY_SECRET }}
 
   part-flow:
     uses: eddyv73/flow-showtime/.github/workflows/part-flow.yml@main
